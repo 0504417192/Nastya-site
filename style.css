@@ -1,0 +1,840 @@
+body{
+	background: url(img/background.png) center no-repeat;
+	background-size: 100% 100%;
+	}
+
+* a{	
+	text-decoration: none;
+	color: #fff;
+}
+* div{
+	box-sizing: border-box;
+}
+@font-face {
+    font-family:'DINPro-regular';
+    font-style:medium;
+    src:url(fonts/dinpro-regular.otf);
+}
+@font-face {
+    font-family:'DINPro-bold';
+    font-style:bold;
+    src:url(fonts/dinpro-bold.otf);
+}
+@font-face {
+    font-family:'DINPro-Black';
+    font-style:bold;
+    src:url(fonts/dinpro-Black.otf);
+}
+/* end main setting*/
+
+.row-header{
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	background-size: cover;
+	background: url(img/header1.jpg) 100% 100% no-repeat; 
+	z-index: 100;
+}
+.logo-header{
+	position: relative;
+	top:20px;
+	width:30%;
+	float:left;
+	text-align: center;
+	font-family: DINPro-bold, sans-serif;
+	font-size: 20px;
+	// background-color: red;
+}
+.menu-header{
+	position: relative;
+	top:20px;
+	width:65%;
+	float:left;
+	text-align: center;
+	// background-color: gold;
+	font-family: DINPro-regular, sans-serif;
+	font-size: 20px;
+
+}
+nav{
+	width:100%;
+	// background-color:gold;
+}
+.menu-header li{
+	display: inline-block; 
+    margin-right: 50px;
+    padding:5px;
+    border: 1px solid transparent;
+
+}
+
+.menu-header li:hover{
+ 	padding:5px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+
+}
+ul .menu-trigger {
+	display: none;
+}
+#dropdown{
+	position:relative;
+	color:white;
+	cursor:pointer;
+}
+.down{
+	position:absolute;
+	left:0;
+	margin-top: 15px;
+	text-align: left;
+	padding: 10px;
+	border:1px solid gray;
+	border-radius: 10px;
+	background-color: rgba(40, 83, 154, 0.63);	
+	display: none;
+}
+.down li{
+	width:100%;
+	margin-top: 5px;							
+}
+.down li:hover{
+	background-color: rgba(40, 83, 154, 0.63);
+}
+.clear{
+	clear: both;
+}
+/*end header*/
+
+.container{
+	position: relative;
+	top:80px;
+	margin:0 auto;
+	// background-color: pink;
+}
+#arrow{
+	position: fixed;
+	bottom:10px;
+	right:15px;
+	width:55px;
+	height: 55px; 
+	background: url(img/arrow.png);
+	background-size: 100% 100%;
+	transform: rotate(90deg);
+	z-index: 999;
+	transition: 0.5s linear;
+	border:1px solid #ffffff;
+	border-radius: 100%;
+}	
+
+#arrow:hover {
+	transform: rotate(450deg);
+	background-color: rgba(243, 242, 242, 0.53);
+}
+/*end scrollop*/
+.picture-cover{
+	position: relative;
+	min-height: 500px;
+	width:100%;
+	text-align:center;
+	// background-color: lime;
+
+}
+
+.hand-massage{
+	position: relative;
+	top:20px;
+	left:20px;
+	width:45%;
+	text-align: center;
+	float:left;
+	background: url(img/hand.jpg) no-repeat center;
+    background-size: cover;
+    border-radius:20px;
+    height: 400px;
+    	box-shadow: 2px 2px 5px;
+}
+.hand-massage-cover{
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.45) 0%,
+     rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.45) 0%, 
+     rgba(255, 255, 255, 0.45) 0%);
+      border-radius:20px;
+ }
+.text {
+	position: relative;
+	top:50%;
+	text-align: center;
+	font-size: 30px;
+	font-family: DINPro-bold, sans-serif;
+	
+}
+.text a{
+	color:black;
+	text-shadow: 2px 2px 5px;
+}
+.apparate-massage{	
+	position: absolute;
+	top:20px;
+	right:20px;
+	width:45%;
+	text-align: center;
+	float:left;
+	background: url(img/apparat-masage.jpg) no-repeat center;
+    background-size: cover;
+    border-radius:20px;
+    height: 400px;
+    box-shadow: 2px 2px 5px;
+}
+/*end picture-cover*/
+.set-title{
+	width:100%;
+	text-align: center;
+	font-size: 40px;
+	font-family: DINPro-Black, sans-serif;
+	margin:20px 0px;
+
+}
+.hand-made-massage{
+	position: relative;
+	width:100%;
+	min-height:500px; 
+    // background-color: rgba(134, 134, 134, 0.56);
+    background-color: #fbfbfb;
+    box-shadow: 0 8px 15px rgba(0, 0, 0,.6);
+	// background: linear-gradient(45deg,rgba(51, 51, 51, 0.3),rgb(246, 249, 249));
+}
+.hand-made-massage span{
+	padding-top: 30px;
+	display: block;
+	text-align: center;
+	font-size: 30px;
+	font-family: DINPro-bold, sans-serif;
+}
+.anti-cellulite{
+	display: inline-block;
+	position: relative;
+	width:97%;
+	margin:10px 15px;
+	padding:5px 5px;
+	text-align: center;
+	min-height: 200px;
+	background-color: rgba(242, 242, 242, 0.4);
+	// overflow: hidden;
+	border:1px solid #dedede;
+	border-bottom:2px solid #dedede;
+	border-radius: 10px;
+	transition: 1s;
+
+}
+.anti-cellulite:hover{
+	box-shadow: 2px 2px 5px;
+}
+.anti-cellulite span{
+	margin: 20px 0;
+	padding:0;
+	text-align: center;
+	font-size: 20px;
+	font-family: DINPro-bold, sans-serif;
+}
+.image{
+	position: relative;
+	width:100%;
+	// height: 200px;
+	// background-color:gold;
+}
+.image img{
+	border-radius: 10px;
+    margin: 0 25px;
+	height: 200px;
+	border:1px solid #dedede;
+	border-bottom:2px solid #dedede;
+	transition: 1s;
+}
+
+.image img:hover{
+	box-shadow: 2px 2px 5px;
+}
+
+.anti-cellulite-description{
+	position: relative;
+	padding:5px;
+	margin: 10px 10px;
+}
+
+
+.anti-cellulite-image{
+	position: relative;
+	float: left;
+	// width:40%;
+	height: 200px;
+	// background-color:gold;
+}
+.anti-cellulite-image img{
+	border-radius: 10px;
+    margin: 0 10px;
+	height: 100%;
+	border:1px solid #dedede;
+	border-bottom:2px solid #dedede;
+	transition: 1s;
+}
+.anti-cellulite-image img:hover{
+	box-shadow: 2px 2px 5px;
+}
+
+.anti-cellulite-image-scrub{
+	position: relative;
+	height: 200px;
+	margin:10px 0;
+	// background-color:gold;
+}
+.anti-cellulite-image-scrub img{
+	border-radius: 10px;
+    margin: 0 10px;
+	height: 100%;
+	border:1px solid #dedede;
+	border-bottom:2px solid #dedede;
+	transition: 1s;
+}
+.anti-cellulite-image-scrub img:hover{
+	box-shadow: 2px 2px 5px;
+}
+.anti-cellulite-description p{
+	font-size: 16px;
+	font-family: DINPro-regular, sans-serif;
+	text-align: justify;
+}
+.anti-cellulite-description ol{
+	font-size: 16px;
+	font-family: DINPro-regular, sans-serif;
+	text-align: justify;
+}
+.anti-cellulite-description strong{
+	font-weight: bold;
+}
+.anti-cellulite-course{
+	padding:5px;
+	margin: 10px 10px;
+	width:47%;
+	float: left;
+}
+.anti-cellulite-course p{
+	font-size: 16px;
+	font-family: DINPro-regular, sans-serif;
+	text-align: center;
+	margin-top: 10px;
+}
+.anti-cellulite-price{
+	padding:5px;
+	margin: 10px 10px;
+	width:100%;
+	
+}
+.anti-cellulite-price p{
+	font-size: 16px;
+	font-family: DINPro-regular, sans-serif;
+	text-align:left;
+	margin-top: 10px;
+}
+.center{
+		width:100%;
+		text-align:center;
+	}
+.wrapper{
+	text-align: center;
+}
+.width{
+		width: 40%;
+	}
+.rear, .wrap{
+	display: inline-block;
+	margin: 10px 15px;
+}
+.conti ol{
+	margin: 10px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+.conti p{
+		font-size: 18px;
+		font-weight: bold;
+	}
+/*end hand-made massage*/
+
+.apparate-made-massage{
+	position: relative;
+	bottom:25px;
+	width:100%; 
+	min-height: 400px;
+}
+.apparate-made-massage span{
+	padding-top: 30px;
+	display: block;
+	text-align: center;
+	font-size: 30px;
+	font-family: DINPro-bold, sans-serif;
+}
+.apparate{
+	position: relative;
+    width: 97%;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    min-height: 200px;
+    background-color: rgba(242, 242, 242, 0.4);
+    border: 1px solid #dedede;
+    border-bottom: 2px solid #dedede;
+    border-radius: 10px;
+    transition: 1s;
+
+}
+.apparate:hover{
+	height: auto;
+	box-shadow: 2px 2px 5px;
+}
+.apparate span{
+	margin: 20px 0;
+	padding:0;
+	text-align: center;
+	font-size: 20px;
+	font-family: DINPro-bold, sans-serif;
+}
+.apparate-description{
+	
+	margin: 10px 10px;
+	padding:5px;
+}
+.apparate-description strong{
+	font-weight: bold;
+}
+.apparate-description p{
+	font-size: 16px;
+	font-family: DINPro-regular, sans-serif;
+	text-align: justify;
+}
+.apparate-course{
+	width:47%;
+	float: left;
+	margin: 10px 10px;
+	padding:5px;
+}
+.apparate-course p{
+	font-size: 16px;
+	font-family: DINPro-regular, sans-serif;
+	text-align: center;
+	margin-top: 10px;
+}
+.apparate-price{
+	width:100%;
+	margin: 10px 10px;
+	padding:5px;
+}
+.apparate-price p{
+	font-size: 16px;
+	font-family: DINPro-regular, sans-serif;
+	text-align:left;
+	margin-top: 10px;
+}
+/*end apparate massage*/
+
+.price{
+	position: relative;
+	top:20px;
+	width:100%;
+	min-height:400px; 
+	box-shadow: 0 8px 15px rgba(0, 0, 0,0.6);
+	// background: blue;
+}
+.price-wrapper{
+	position: relative;
+	margin:0 auto;
+	text-align: center;
+}
+table{
+	width:97%;
+	margin:0 auto;
+}
+thead td{
+	font-size: 20px;
+	font-family: DINPro-bold, sans-serif;
+	text-align: left;
+}
+tbody td{
+	text-align: left;
+}
+td{
+	font-size: 18px;
+	font-family: DINPro-regular, sans-serif;
+	padding:10px;
+	border:1px solid transparent;
+}
+/*end price*/
+
+.stocks-wrap{
+	width:100%;
+	min-height:500px; 
+	    // background-color: rgba(134, 134, 134, 0.56);
+	    background-color: #fbfbfb;
+	box-shadow: 0 8px 15px rgba(0, 0, 0,.6);
+    // background: linear-gradient(45deg,rgba(51, 51, 51, 0.3),rgb(246, 249, 249));
+}
+
+.content{
+	position: relative;
+	top:20px;
+	width:97%;
+	margin:0 auto;	
+}
+.content-photo{
+	display: inline-block;
+	width: 40%;
+	height: 316px;
+	margin-left: 1rem;
+	background:url(img/stocks2.jpg) center no-repeat;
+	background-size: 100% 100%;
+	border-radius:10px;
+	transition:1s;
+}
+.content-photo:hover{
+	box-shadow:2px 3px 15px 1px;
+}
+.content-description{
+	position: absolute;
+	display: inline-block;
+	width:49%;
+	height: 316px;
+	overflow: hidden;
+	padding:10px;
+	font-family: DINPro-regular, sans-serif;
+	font-size: 18px;
+	text-indent: 5px;
+	text-align: justify;
+}
+.content-description p:first-child{
+	font-size: 20px;
+	text-size: 25px;
+	text-align: center;
+}
+.content-description span{
+	color:#e41919;
+}
+/*end stocks*/
+
+.contact{
+	position: relative;
+	width:100%;
+	min-height:500px;
+	// background: gray;
+}
+.title{
+	width: 100%;   
+    font-size: 40px;
+    font-family: DINPro-Black, sans-serif;
+    margin: 20px 0px;
+    text-align: center;
+}
+.all-wrapper{
+	position: relative;
+}
+.contact-cover{
+	position: relative;
+	width: 100%;
+	// background-color:lime;
+}
+.contact-cover img{
+	margin:20px 30px;
+}
+.set{
+	margin:27px 0;
+}
+.contact-cover-telephone{
+	position: relative;
+	width:32%;
+	float:left;
+	// background-color:red;
+}
+.picture{
+	// display: inline-block;
+	position: relative;
+	// background-color: blue;
+	// width:49%;
+	text-align: center;
+}
+.info-phone{
+	// display: inline-block;
+	position: relative;
+	// top:-35px;
+	// width:49%;
+	text-align: center;
+	font-family: DINPro-regular, sans-serif;
+	font-size: 18px;
+	// background-color: lime;
+}
+.info-phone a{
+	color:black;
+	vertical-align: baseline;
+}
+.info-phone p{
+	color:#dfdfdf;
+}
+.info-adress{
+	// display: inline-block;
+	position: relative;
+	// top:-35px;
+	// width:49%;
+	text-align: center;
+	font-family: DINPro-regular, sans-serif;
+	font-size: 18px;
+	// background-color: lime;
+}
+.contact-cover-adress{
+	position: relative;
+	width:32%;
+	float:left;
+	// background-color:red;
+}
+.contact-cover-timework{
+	position: relative;
+	width:32%;
+	float:left;
+	// background-color:red;
+}
+.info-timework{
+	// display: inline-block;
+    position: relative;
+    // top: -45px;
+    // width: 49%;
+    text-align: center;
+    font-family: DINPro-regular, sans-serif;
+    font-size: 18px;
+}
+
+.contact-map{
+	position: relative;
+	width:100%;
+	margin:0 auto;
+	// background-color:pink;
+}
+/*end contact*/
+
+.footer-wrap{
+	width:100%;
+	min-height: 100px;
+	margin-top: 50px;
+	background: url(img/header1.jpg) 100% 100% no-repeat;
+	text-align: center;
+}
+.footer-wrap img{
+	margin:18px 10px;
+	border:1px solid transparent;
+	border-radius: 100%;
+}
+.footer-wrap img:hover{
+	transition:1s linear;
+	border:1px solid #ffffff;
+	border-radius: 100%;
+	background-color: #ffffff;
+}
+/* end footer*/
+
+
+
+
+/*MEDIA*/
+
+
+@media all and (max-width:835px){
+	
+	.image img{
+		width:45%;
+		margin: 0 10px;
+	}
+	// .big:active{
+	// position: absolute;
+	// left:10%;
+	// top:0;
+	// width:80%;
+	// height: 400px;	
+	// margin: 0 auto;
+	// z-index:999;
+	// transition: none;
+
+	// }
+
+}
+@media all and (max-width:819px){
+	.menu-trigger{
+		text-align: center;
+		display: block;
+		cursor:pointer;
+	}
+	#slide{
+		width: 40%;
+	    display: none;
+	    background: rgba(40, 83, 154, 0.63);
+	    position: absolute;
+	    right: 0;
+
+	}
+	#slide li:hover{
+		background: rgba(0,0,0,0.1);
+	}
+	.menu-header ul li{
+		display: block;
+		text-align: right;
+		margin-right: 0;	
+	}
+	.down{
+		left:-100%;
+	}
+
+	#dropdown li{
+		text-align: left;
+	}
+	.menu-header li:hover{
+ 	padding:5px;
+    border: 1px solid transparent;
+    border-radius: 0;
+
+	}
+	/*end header*/
+	.hand-massage{
+		width:95%;
+	}
+	.apparate-massage{
+		width:95%;
+		position: relative;
+		right:0;
+		margin:20px;
+	}
+	/*end picture-cover*/
+	
+	.size-setting{
+		width:100%;
+	}
+	.apparate-price{
+		float: none;
+	}
+	.anti-cellulite-image{
+		float:none;
+		width:100%;
+		margin: 10px 0;
+	}
+	.anti-cellulite-image img{
+		margin: 0 0;
+	}
+	
+	/*end hand-made and apparate-made massage*/
+
+	.content-description{
+		position: relative;
+		width:100%;
+	}
+	.content-photo{
+		width:100%;
+		margin:0 auto;
+	}
+	/*end stocks*/
+
+	.contact-cover{
+		width:100%;
+		bottom:30px;
+	}
+	.contact-cover-telephone{
+		top:0rem;
+	}
+	.contact-cover-adress{
+		position: relative;
+		top:0rem;
+	}
+	.set{
+		display: inline-block;
+		width:32%;		
+	}
+	.picture{
+		width:100%;
+	}
+	.info-phone{
+		width:100%;
+		top:0;
+	}
+	.info-timework{
+		width:100%;
+		top:0;
+	}
+	.info-adress{
+		width:100%;
+		top:0;
+	}
+	
+	/*end contact*/
+}
+
+@media all and (max-width:691px) {
+	.contact-cover-adress{
+		top:0rem;
+	}
+	.hidden{
+		display: none;
+	}
+	
+}
+@media all and (max-width:587px){
+	.image{
+		height: inherit;
+	}
+	.image img{
+		margin:5px 0;
+		width:70%;
+	}
+}
+// @media all and (min-width:588px){
+// 	.hide{
+// 		display: none;
+// 	}
+// }
+@media all and (max-width:557px){
+	.anti-cellulite-image-scrub {
+		width: 100%;
+		bottom:10px;
+	}
+	.anti-cellulite-image-scrub img{
+		width: 100%;
+		
+	}
+}
+@media all and (max-width:514px){
+	.logo-header{
+		top:10px;
+	}
+	.down{
+		left:-150%;
+	}
+	/*end header*/
+	.hand-massage{
+	left:10px;
+	}
+	.apparate-massage{
+		right:10px;
+	}
+	/*end picture-cover*/
+	
+	.anti-cellulite-image img{
+		width:100%;
+	}
+}	
+@media all and (max-width:450px){
+	.image img{
+		width:100%;
+	}
+		.big:active{
+	position: absolute;
+	left:0;
+	top:20%;
+	width:100%;
+	height: 400px;	
+	margin: 0 auto;
+	z-index:999;
+	transition: none;
+
+	}
+}
